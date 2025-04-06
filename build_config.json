@@ -1,0 +1,157 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "Q:/Programming/Python/funnyRAT/bot_test.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": true
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "ctypes"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "aiogram"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "typing"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "urllib"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "discord"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "datetime"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "threading"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "pathlib"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "PIL"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "win32process"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "win32gui"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "win32api"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "win32con"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "requests"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "asyncio"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "subprocess"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "pyautogui"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "keyboard"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "socket"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "glob"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "json"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "sys"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "cv2"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "io"
+  },
+  {
+   "optionDest": "collect_all",
+   "value": "os"
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}
