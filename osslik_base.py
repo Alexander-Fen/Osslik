@@ -32,7 +32,7 @@ import re
 # Config/Variables
 BOT_TOKEN = "discord bot token"
 AUTHORIZED_USER_IDS = [123456789]
-TG_BOT_TOKEN = "discord bot token"
+TG_BOT_TOKEN = "telegram bot token"
 TG_USER_ID = 123456789
 ELEVATION_CONFIG_PATH = Path(os.getenv('ProgramData')) / 'osslik.json'
 ELEVATION_SERVICE_PORT = 58473
